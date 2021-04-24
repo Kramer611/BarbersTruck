@@ -1,0 +1,350 @@
+/* The Barber's Truck */
+
+/* the styles for the elements */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: #fff;
+}
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	/*font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";*/
+	/*font-family: Arial, Helvetica, sans-serif;*/
+    font-size: 100%;
+	width: 99%;
+	max-width: 960px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #931420;
+	background-color: #fffded;
+}
+
+/* the styles for the header */
+
+header {
+	border-bottom: 3px solid #931420;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	background-image: -moz-linear-gradient(30deg, white 0%, red 50%, black 100%);
+	background-image: -webkit-linear-gradient(30deg, white 0%, red 50%, black 100%);
+	background-image: -o-linear-gradient(30deg, white 0%, red 50%, black 100%);
+	background-image: linear-gradient(30deg, white 0%, red 50%, black 100%);
+	color: white;
+	
+	/*background: -webkit-linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, #fff 50%, #f6bb73 80%, #f6bb73 100%);*/
+	/*30deg, #f6bb73 0%, #fffded 30%, white 50%, #fffded 80%, #f6bb73 100%);*/
+}
+
+header img {
+	float: left;
+	padding-left: 3.125%;
+	padding-right: 3.125%;
+
+}
+
+header h2 {
+	font-size: 230%;
+	color: white;
+	font-weight: bold;
+	/* text-indent: 30px; */
+	
+}
+
+header h3 {
+	font-size: 175%;
+	/*font-style: italic;*/
+	/* text-indent: 30px; */
+}
+
+/* the styles for the navigation menu */
+
+#mobile_menu { display: none; }
+
+#nav_menu ul {
+	list-style: none;
+	position: relative;
+	margin: 0;
+	padding: 0;	
+}
+
+#nav_menu ul li {
+	float: left;
+	width: 16.66%;
+}
+
+#nav_menu ul li a {
+	display: block;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-decoration: none;
+	background: #8A0000;
+	color: #fff;
+	font-weight: bold;
+}
+
+#nav_menu ul li a.current {
+	color: yellow;
+}
+
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+}
+
+#nav_menu ul li:hover >ul {
+	display: block;
+	width: 20%;
+} 
+
+#nav_menu ul ul li {
+	width: 100%; /* Size the dropdown to full size of parent */
+	border: none;
+}
+
+#nav_menu::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+
+/* the styles for the aside*/
+
+aside {
+	float: left;
+	width: 54.6875%;
+	
+	padding: 0 0 20px 20px;
+}
+
+aside h2 {
+	color: #800000;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+aside img {
+	padding-bottom: 1em;
+}
+
+/* the styles for the section */
+
+section {
+	/*width: 525px;*/
+	width: 160px;
+	float: right;
+	padding-left: 2.083333333333333%;
+	padding-right: 2.083333333333333%;
+	padding-bottom: 20px;
+}
+
+section h1 {
+	font-size: 150%;
+	padding-top: .5em;
+	padding-bottom: .25em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+section h2 {
+	font-size: 130%;
+	color: #800000;
+	padding-top: .5em;
+	padding-bottom: .25em;
+}
+
+section p {
+	padding-bottom: .5em;
+}
+
+section blockquote {
+	padding-left: 2em;
+	padding-right: 2em;
+	font-style: italic;
+}
+
+section ul {
+	padding-bottom: .25em;
+	padding-left: 1.25em;
+}
+
+section li {
+	padding-bottom: .35em;
+}
+
+section ul.circle {
+	list-style-type: circle;
+}
+
+section img {
+	float: right;
+}
+
+
+/* the styles for the article */
+
+article {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+
+article img {
+	float: right;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 1em;
+	border: 1px solid black;
+	min-width: 150px;
+	max-width: 40%;
+
+}
+
+article h2 {
+	padding-top: 0;
+}
+
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+/* ========================== main ============================== */
+
+main h1{
+	text-align: center;
+	border-bottom: 2px solid #800000;
+	padding-bottom: 15px; 
+	
+	
+}
+
+.responsive{
+	float: left;
+	padding-top: 1em;
+	padding-bottom: 3em;
+	padding-left: 3em;
+	max-width: 50%;
+}
+
+
+
+/* special styles */
+
+
+a:hover {
+	font-style: italic;
+}
+
+a:focus {
+	font-style: italic;
+}
+
+.shadow {
+	text-shadow: 2px 2px 2px #800000;
+}
+
+/* the styles for the footer */
+
+footer {
+	background-color: #931420;
+	clear: both;
+	
+}
+
+footer p {
+	text-align: center;
+	color: #fff;
+	padding: 1em 0;
+	
+}
+
+/* tablet in portrait view */
+@media (max-width: 959px) {
+	section h1 {
+		font-size: 135%;
+	}
+	
+	section h2 {
+		font-size: 120%;
+	}
+	
+	aside h2 {
+		font-size: 120%;
+	}
+}
+
+/* phone in landscape orientation */
+@media (max-width: 767px) {
+	
+	header img {
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+	
+ 	header h2, header h3 {
+		text-align: center;
+	}
+	
+	section {
+		float: none;
+		width: 95.833333337%;
+	}
+	
+	aside {
+		float: none;
+		padding-right: 2.083333333333333%;
+		width: 95.833333337%;
+	}
+	
+	section article img {
+		max-width: 30%;
+	}
+	
+	#nav_menu { display: none; }
+	#mobile_menu { display: block; }
+	
+	#mobile_menu div.slicknav_menu {
+		background-color: #800000 !important;
+	}
+	/*#mobile_menu.slicknav_menu {
+		background-color: #800000 !important;
+	}*/
+	
+
+
+/* phone in portrait orientation */
+@media (max-width: 479px) {
+	body {
+		font-size: 90%;
+	}
+}
+
+/* hide the mobile menu 
+#mobile_menu { display: none; }
+*/
+
+/* display the mobile menu 
+#mobile_menu { display: block; }
+
+*/
+
+
+
+
+
